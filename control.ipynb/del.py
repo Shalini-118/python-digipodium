@@ -18,7 +18,17 @@ rt(90)
 fd(200)
 rt(90)
 fd(300)
-
+penup()
+goto(50,40)
+pendown()
+dot(30)
+penup()
+goto(50,100)
+pendown()
+lt(180)
+fd(300)
+rt(60)
+fd(110)
 
 
 mainloop()

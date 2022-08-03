@@ -15,7 +15,7 @@ while True:
     elif out==1:
         lose_count+=1
     if win_count==3:
-        print("You win👑")     
+        print("You win👑")
         break
     elif lose_count==3:
         print("You lose☠️")

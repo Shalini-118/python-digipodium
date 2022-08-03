@@ -1,4 +1,7 @@
+from tkinter import ARC
 from turtle import *
+
+from zmq import CURVE
 pencolor('red')
 pensize(10)
 forward(100)# move forward 200 units
@@ -29,6 +32,10 @@ lt(180)
 fd(300)
 rt(60)
 fd(110)
+penup()
+goto(500,-50)
+pendown()
+
 
 
 mainloop()

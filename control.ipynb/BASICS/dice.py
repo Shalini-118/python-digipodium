@@ -9,12 +9,13 @@ while True:
    print(f'🎲=>{dice[roll-1]}')
    if roll==6:
         win_count+=1
-        print('You won the game👑')
-        break
-        
    elif roll==3:
         lose_count+=1
-        print('You lose the game☠️') 
+   if win_count==3:
+        print("You win👑")
+        break
+   elif lose_count==3 :
+        print("You lose☠️")
         break
    else:
-        print("Roll again")
+       print("Roll again")

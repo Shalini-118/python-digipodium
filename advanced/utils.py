@@ -2,7 +2,7 @@ def char_character(sentence):
     data={}#blank dict
     for char in set(sentence):
         data[char]=sentence.count(char)
-        print(char,sentence.count(char))
+        #print(char,sentence.count(char))
     return data    
 
 def word_counter(sentence):

@@ -31,7 +31,7 @@ def update_score():
         sounds.eating2.play()
 
 def player_control():
-    print('updating')
+    #print('updating')
     if keyboard.RIGHT and not p.right>WIDTH:
         p.x+=speed
         p.angle=-10

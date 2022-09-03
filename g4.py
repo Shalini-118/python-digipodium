@@ -2,6 +2,7 @@ import pgzrun
 HEIGHT=500
 WIDTH=600
 p=Actor('ironman',(100,100))
+
 speed=4
 def draw():
     screen.fill('black')
@@ -12,11 +13,13 @@ def update():
     player()
 
 def player():
-    if keyboard.UP or keyboard.DOWN: 
-        p.top<0 and not p.bottom>HEIGHT
-        p.y-=speed    
-    #if keyboard.DOWN and not p.bottom>HEIGHT:
-      #  p.y+=speed   
-    else:
-        p.angle=0   
+    if keyboard.UP and not p.top<0==p.colliderect():
+        p.y-=speed  
+        keyboard.DOWN==HEIGHT
+           #p.collierect(DOWN) and not p.bottom>HEIGHT 
+        p.y-=speed       
+    #elif keyboard.DOWN and not p.bottom>HEIGHT:
+     #   p.y+=speed 
+        
+       
 pgzrun.go()          
